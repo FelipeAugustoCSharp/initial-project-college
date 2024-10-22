@@ -6,8 +6,27 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <main>
+        <figure id="principal">
+            <img src="./images/dog-retriver.webp" alt="imagem de um cachorro">
+        </figure>
+        <nav>
+            <ul>
+              <li><button onclick="addImage()">Proxima Imagem</button></li>
+            </ul>
+        </nav>
+    </main>
     <footer></footer>
   </body>
+  <script>
+    const addImage = () => {
+        const figureTag = document.getElementById("principal")
+        const image = document.createElement("img");
+        image.src = './images/dog-retriver2.webp';
+        figureTag.appendChild(image)
+
+        console.log("clicou");
+        
+    }
+  </script>
 </html>
